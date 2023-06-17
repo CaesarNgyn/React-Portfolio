@@ -17,7 +17,7 @@ const HomeCV = () => {
                   <img src="img/hero/caesar.png" alt="hero" />
                 </div>
                 <div className="name_holder">
-                  <h3>NGUYỄN <span>KHÁNH</span></h3>
+                  <h3>Nguyễn <span>Khánh</span></h3>
                 </div>
                 <div className="text_typing">
                   <p>I'm a&nbsp;
@@ -25,11 +25,11 @@ const HomeCV = () => {
                       sequence={[
                         // Same substring at the start will only be typed out once, initially
                         'College Student',
-                        2500, // wait 1s before replacing "Mice" with "Hamsters"
+                        1700, // wait 1s before replacing "Mice" with "Hamsters"
                         'Web Developer',
-                        2500,
+                        1700,
                         'NestJS Developer',
-                        2500
+                        1700
 
                       ]}
                       wrapper="span"
