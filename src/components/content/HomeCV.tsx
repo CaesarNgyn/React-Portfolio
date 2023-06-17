@@ -1,3 +1,5 @@
+import { TypeAnimation } from 'react-type-animation';
+
 
 const HomeCV = () => {
   return (
@@ -12,13 +14,30 @@ const HomeCV = () => {
             <div className="content hero">
               <div className="inner_content">
                 <div className="image_wrap">
-                  <img src="img/hero/img.jpg" alt="hero" />
+                  <img src="img/hero/caesar.png" alt="hero" />
                 </div>
                 <div className="name_holder">
-                  <h3>Alan <span>Michaelis</span></h3>
+                  <h3>NGUYỄN <span>KHÁNH</span></h3>
                 </div>
                 <div className="text_typing">
-                  <p>I'm a <span className="arlo_tm_animation_text_word"></span></p>
+                  <p>I'm a&nbsp;
+                    <TypeAnimation
+                      sequence={[
+                        // Same substring at the start will only be typed out once, initially
+                        'College Student',
+                        2500, // wait 1s before replacing "Mice" with "Hamsters"
+                        'Web Developer',
+                        2500,
+                        'NestJS Developer',
+                        2500
+
+                      ]}
+                      wrapper="span"
+                      speed={50}
+                      // style={{ fontSize: '2em', display: 'inline-block' }}
+                      repeat={Infinity}
+                    />
+                  </p>
                 </div>
               </div>
             </div>
@@ -27,7 +46,7 @@ const HomeCV = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div >
     </>
   )
 }
