@@ -1,7 +1,7 @@
-import LeftPart from "../components/LeftPart"
-import PreLoader from "../components/PreLoader"
-import RightPart from "../components/RightPart"
-import Mobile from "../components/mobile/Mobile"
+import LeftPart from "components/LeftPart"
+import PreLoader from "components/PreLoader"
+import RightPart from "components/RightPart"
+import Mobile from "components/mobile/Mobile"
 
 const Portfolio = () => {
   return (
