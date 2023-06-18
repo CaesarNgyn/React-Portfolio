@@ -1,5 +1,5 @@
 import sideBarLogo from '@/assets/img/logo/Caesar.png'
-
+import { ImGithub, ImFacebook2, ImInstagram } from 'react-icons/im'
 
 const LeftPart = () => {
   return (
@@ -15,18 +15,29 @@ const LeftPart = () => {
               <li><a href="#about">About</a></li>
               <li><a href="#skills">Skills</a></li>
               <li><a href="#projects">Projects</a></li>
-              <li><a href="#news">Portfolio</a></li>
+              <li><a href="#contact">Contact</a></li>
 
             </ul>
           </div>
           <div className="leftpart_bottom">
             <div className="social_wrap">
               <ul>
-                <li><a href="#"><i className="xcon-facebook"></i></a></li>
-                <li><a href="#"><i className="xcon-twitter"></i></a></li>
-                <li><a href="#"><i className="xcon-linkedin"></i></a></li>
-                <li><a href="#"><i className="xcon-instagram"></i></a></li>
-                <li><a href="#"><i className="xcon-behance"></i></a></li>
+                <li>
+                  <a href="https://fb.com/khanhrussian" target='_blank'>
+                    <ImFacebook2 />
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/khanhrussian/" target='_blank'>
+                    <ImInstagram />
+                  </a>
+                </li>
+                <li>
+                  <a href="https://github.com/caesarNgyn" target='_blank'>
+                    <ImGithub />
+                  </a>
+                </li>
+
               </ul>
             </div>
           </div>

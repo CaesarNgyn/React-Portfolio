@@ -98,7 +98,7 @@ const Skills = () => {
                       </div>
                     </div> */}
                     <div className="arlo_tm_progress" data-value="85" data-color="#000">
-                      <span><span className="label">NestJS - <span className="experience"></span></span><span className="number">99%</span></span>
+                      <span><span className="label">NestJS <span className="experience"></span></span><span className="number">99%</span></span>
                       <div className="arlo_tm_bar_bg">
                         <ProgressBar
                           completed={99}
@@ -109,7 +109,7 @@ const Skills = () => {
                       </div>
                     </div>
                     <div className="arlo_tm_progress" data-value="75" data-color="#000">
-                      <span><span className="label">Express - <span className="experience"></span></span><span className="number">90%</span></span>
+                      <span><span className="label">Express  <span className="experience"></span></span><span className="number">90%</span></span>
                       <div className="arlo_tm_bar_bg">
                         <ProgressBar
                           completed={90}
