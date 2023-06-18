@@ -1,6 +1,8 @@
 
 import aboutImg from '@/assets/img/about/about.jpg'
 import CurriculumVitae from '@/assets/cvCaesar.pdf'
+import { TypeAnimation } from 'react-type-animation';
+
 const About = () => {
   return (
     <>
@@ -9,7 +11,7 @@ const About = () => {
           <div className="container">
             <div className="arlo_tm_title_holder">
               <h3>About Me</h3>
-              <span>Main informations about me</span>
+              <span>Thông tin cá nhân</span>
             </div>
             <div className="arlo_tm_about_wrap">
               <div className="author_wrap">
@@ -28,42 +30,63 @@ const About = () => {
                 </div>
                 <div className="rightbox">
                   <div className="arlo_tm_mini_title_holder">
-                    <h4>I'm Alan Michaelis and <span className="arlo_tm_animation_text_word"></span></h4>
+                    <h4>Bonjour... I'm&nbsp;
+                      <TypeAnimation
+                        sequence={[
+                          // Same substring at the start will only be typed out once, initially
+                          'College Student',
+                          1700, // wait 1s before replacing "Mice" with "Hamsters"
+                          'Web Developer',
+                          1700,
+                          'NestJS Developer',
+                          1700
+
+                        ]}
+                        wrapper="span"
+                        speed={50}
+                        // style={{ fontSize: '2em', display: 'inline-block' }}
+                        repeat={Infinity}
+                      />
+                    </h4>
                   </div>
                   <div className="definition">
-                    <p>Hi! My name is <strong>Alan Michaelis</strong>. I am a Web Developer, and I'm very passionate and dedicated to my work. With 20 years experience as a professional Web developer, I have acquired the skills and knowledge necessary to make your project a success. I enjoy every step of the design process, from discussion and collaboration to concept and execution, but I find the most satisfaction in seeing the finished product do everything for you that it was created to do.</p>
+                    <p>Hi! Mình là <strong>Khánh</strong>, hoặc bạn có thể gọi mình là Caesar (Xê-Sa). </p>
+                    <br />
+                    Tuy mình xuất thân là một kỹ sư An Toàn Thông Tin, nhưng mình lại có định hướng trở thành một kỹ sư Công Nghệ Phần Mềm ^^!
+                    <br />
+
                   </div>
                   <div className="about_short_contact_wrap">
                     <ul>
                       <li>
-                        <span><label>Birthday:</label> 01.07.1990</span>
+                        <span><label>Họ Tên:</label> Nguyễn Khánh</span>
                       </li>
                       <li>
-                        <span><label>Age:</label> 28</span>
+                        <span><label>Ngày Sinh:</label> 24/05/2002</span>
                       </li>
                       <li>
-                        <span><label>City:</label> New York, USA</span>
+                        <span><label>Địa Chỉ:</label> Tây Hồ, Hà Nội </span>
                       </li>
                       <li>
-                        <span><label>Interests:</label> Soccer, UFC</span>
+                        <span><label>Sở Thích:</label> Calithenics, Boxing</span>
                       </li>
                       <li>
-                        <span><label>Study:</label> Chicago University</span>
+                        <span><label>Học Vấn:</label> Học Viện Kỹ Thuật Mật Mã</span>
                       </li>
                       <li>
-                        <span><label>Degree:</label> Master</span>
+                        <span><label>Chuyên Ngành:</label> An Toàn Thông Tin</span>
                       </li>
-                      <li>
+                      {/* <li>
                         <span><label>Website:</label> <a href="#">www.mywebsite.com</a></span>
-                      </li>
+                      </li> */}
                       <li>
-                        <span><label>Mail:</label> <a href="mailto:example@gmail.com">mymail&#64;gmail.com</a></span>
+                        <span><label>Mail:</label> caesarngyn&#64;gmail.com</span>
                       </li>
+                      {/* <li>
+                        <span><label>Phone:</label> <a href="#">0833822085</a></span>
+                      </li> */}
                       <li>
-                        <span><label>Phone:</label> <a href="#">+77 022 177 05 05</a></span>
-                      </li>
-                      <li>
-                        <span><label>Twitter:</label> <a href="#">&#64;myusername</a></span>
+                        <span><label>Facebook:</label> <a href="https://www.facebook.com/khanhrussian" target="_blank">&#64;Khánh Nguyễn</a></span>
                       </li>
                     </ul>
                   </div>
