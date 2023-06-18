@@ -3,8 +3,12 @@ import PreLoader from "components/PreLoader"
 import RightPart from "components/RightPart"
 import Mobile from "components/mobile/Mobile"
 import { FloatButton } from 'antd';
+import { useState } from "react";
 
 const Portfolio = () => {
+
+  const [showSideBar, setShowSideBar] = useState<boolean>(false)
+
   return (
     <>
       <div className="arlo_tm_wrapper_all">
@@ -28,11 +32,17 @@ const Portfolio = () => {
 
         <div className="arlo_tm_content">
 
+          {/* Left Part */}
+          <LeftPart
+            showSideBar={showSideBar}
+            setShowSideBar={setShowSideBar}
+          />
 
-          <LeftPart />
-
-
-          <RightPart />
+          {/* Right Part */}
+          <RightPart
+            showSideBar={showSideBar}
+            setShowSideBar={setShowSideBar}
+          />
 
           {/* <a className="arlo_tm_totop" href="#"></a> */}
 

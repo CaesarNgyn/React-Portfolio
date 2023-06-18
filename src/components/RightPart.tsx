@@ -4,11 +4,17 @@ import Skills from "components/content/Skills"
 import Project from "components/content/Project"
 import Contact from "./content/Contact"
 import Footer from "./content/Footer"
-
-const RightPart = () => {
+interface IRightPartProps {
+  showSideBar: boolean,
+  setShowSideBar: (value: boolean) => void
+}
+const RightPart = (props: IRightPartProps) => {
+  const { showSideBar } = props
   return (
     <>
-      <div className="arlo_tm_rightpart">
+      <div
+        className={showSideBar ? "arlo_tm_rightpart" : "arlo_tm_rightpart opened"}
+      >
         <div className="rightpart_inner">
 
           {/* Home */}

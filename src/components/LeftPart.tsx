@@ -1,10 +1,22 @@
 import sideBarLogo from '@/assets/img/logo/Caesar.png'
 import { ImGithub, ImFacebook2, ImInstagram } from 'react-icons/im'
 
-const LeftPart = () => {
+interface ILeftPartProps {
+  showSideBar: boolean,
+  setShowSideBar: (value: boolean) => void
+}
+
+
+
+const LeftPart = (props: ILeftPartProps) => {
+  const { showSideBar } = props
+
+  const handleShowSideBar = () => {
+    props.setShowSideBar(!showSideBar)
+  }
   return (
     <>
-      <div className="arlo_tm_leftpart_wrap">
+      <div className={showSideBar ? "arlo_tm_leftpart_wrap" : "arlo_tm_leftpart_wrap opened"}>
         <div className="leftpart_inner">
           <div className="logo_wrap">
             <a href="#"><img src={sideBarLogo} alt="desktop-logo" /></a>
@@ -41,7 +53,14 @@ const LeftPart = () => {
               </ul>
             </div>
           </div>
-          <a className="arlo_tm_resize" href="#"><i className="xcon-angle-left"></i></a>
+          <a className={showSideBar ? "arlo_tm_resize" : "arlo_tm_resize opened"}
+            href="#"
+            onClick={() => handleShowSideBar()}
+          >
+            <i className={showSideBar ? "xcon-angle-left" : "xcon-angle-left"}>
+
+            </i>
+          </a>
         </div>
       </div>
     </>
