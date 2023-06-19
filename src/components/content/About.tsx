@@ -4,6 +4,7 @@ import CurriculumVitae from '@/assets/cvCaesar.pdf'
 import { TypeAnimation } from 'react-type-animation';
 import { useEffect, useRef } from 'react';
 import Parallax from 'parallax-js';
+
 const About = () => {
   const sceneEl = useRef(null);
 
@@ -38,16 +39,16 @@ const About = () => {
                     ref={sceneEl}
                   >
                     <div className="image layer" data-depth="0.2">
-                      <img src="img/about/550x640.jpg" alt="550x640" />
+                      <img src={aboutImg} alt="550x640" />
                       <div className="inner"
-                        data-img-url={aboutImg}
+                        // data-img-url={aboutImg}
                         style={{ backgroundImage: `url(${aboutImg})` }}
                       >
 
                       </div>
                     </div>
                     <div className="border layer" data-depth="0.3">
-                      <img src="img/about/550x640.jpg" alt="550x640" />
+                      <img src={aboutImg} alt="550x640" />
                       <div className="inner"></div>
                     </div>
                   </div>
