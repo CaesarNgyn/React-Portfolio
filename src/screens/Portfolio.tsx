@@ -44,10 +44,10 @@ const Portfolio = () => {
             setShowSideBar={setShowSideBar}
           />
 
-          {/* <a className="arlo_tm_totop" href="#"></a> */}
+          {/* <a className="arlo_tm_totop opened" href="#"></a> */}
 
           <FloatButton.BackTop
-            className="arlo_tm_totop"
+            className="arlo_tm_totop opened"
           // tooltip={<div>Lên đầu trang</div>}
           />
 

@@ -104,10 +104,13 @@ const LeftPart = (props: ILeftPartProps) => {
             </div>
           </div>
           <a className={showSideBar ? "arlo_tm_resize" : "arlo_tm_resize opened"}
-            href="#"
+            // href="#"
             onClick={() => handleShowSideBar()}
           >
-            <i className={showSideBar ? "xcon-angle-left" : "xcon-angle-left opened"}>
+            <i
+              className={showSideBar ? "xcon-angle-left" : "xcon-angle-left opened"}
+              style={{ cursor: "pointer" }}
+            >
 
             </i>
           </a>
