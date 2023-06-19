@@ -3,11 +3,17 @@ import PreLoader from "components/PreLoader"
 import RightPart from "components/RightPart"
 import Mobile from "components/mobile/Mobile"
 import { FloatButton } from 'antd';
-import { useState } from "react";
-
+import { useEffect, useState } from "react";
+import { isMobile } from "react-device-detect";
 const Portfolio = () => {
 
   const [showSideBar, setShowSideBar] = useState<boolean>(true)
+
+  useEffect(() => {
+    if (isMobile) {
+      setShowSideBar(false)
+    }
+  }, [isMobile])
 
   return (
     <>

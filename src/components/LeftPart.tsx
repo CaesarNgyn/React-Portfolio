@@ -1,6 +1,7 @@
 import sideBarLogo from '@/assets/img/logo/Caesar.png'
 import { ImGithub, ImFacebook2, ImInstagram } from 'react-icons/im'
 import { useState } from 'react'
+import { isMobile } from 'react-device-detect'
 interface ILeftPartProps {
   showSideBar: boolean,
   setShowSideBar: (value: boolean) => void
@@ -103,17 +104,19 @@ const LeftPart = (props: ILeftPartProps) => {
               </ul>
             </div>
           </div>
-          <a className={showSideBar ? "arlo_tm_resize" : "arlo_tm_resize opened"}
-            // href="#"
-            onClick={() => handleShowSideBar()}
-          >
-            <i
-              className={showSideBar ? "xcon-angle-left" : "xcon-angle-left opened"}
-              style={{ cursor: "pointer" }}
+          {!isMobile &&
+            <a className={showSideBar ? "arlo_tm_resize" : "arlo_tm_resize opened"}
+              // href="#"
+              onClick={() => handleShowSideBar()}
             >
+              <i
+                className={showSideBar ? "xcon-angle-left" : "xcon-angle-left opened"}
+                style={{ cursor: "pointer" }}
+              >
 
-            </i>
-          </a>
+              </i>
+            </a>
+          }
         </div>
       </div>
     </>
