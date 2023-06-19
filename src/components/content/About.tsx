@@ -19,7 +19,12 @@ const About = () => {
                   <div className="about_image_wrap parallax" data-relative-input="true">
                     <div className="image layer" data-depth="0.1">
                       <img src="img/about/550x640.jpg" alt="550x640" />
-                      <div className="inner" data-img-url={aboutImg}></div>
+                      <div className="inner"
+                        data-img-url={aboutImg}
+                        style={{ backgroundImage: `url(${aboutImg})` }}
+                      >
+
+                      </div>
                     </div>
                     <div className="border layer" data-depth="0.2">
                       <img src="img/about/550x640.jpg" alt="550x640" />

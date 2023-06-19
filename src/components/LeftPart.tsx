@@ -57,7 +57,7 @@ const LeftPart = (props: ILeftPartProps) => {
             href="#"
             onClick={() => handleShowSideBar()}
           >
-            <i className={showSideBar ? "xcon-angle-left" : "xcon-angle-left"}>
+            <i className={showSideBar ? "xcon-angle-left" : "xcon-angle-left opened"}>
 
             </i>
           </a>

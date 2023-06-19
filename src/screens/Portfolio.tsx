@@ -7,7 +7,7 @@ import { useState } from "react";
 
 const Portfolio = () => {
 
-  const [showSideBar, setShowSideBar] = useState<boolean>(false)
+  const [showSideBar, setShowSideBar] = useState<boolean>(true)
 
   return (
     <>
