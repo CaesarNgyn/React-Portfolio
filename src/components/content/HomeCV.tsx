@@ -32,11 +32,11 @@ const HomeCV = () => {
                     <TypeAnimation
                       sequence={[
                         // Same substring at the start will only be typed out once, initially
-                        'College Student',
+                        'Security College Student',
                         1700, // wait 1s before replacing "Mice" with "Hamsters"
                         'Web Developer',
                         1700,
-                        'NestJS Developer',
+                        'Backend Engineer',
                         1700
 
                       ]}

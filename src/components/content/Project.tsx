@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Button, Modal } from 'antd';
 import { FaReact, FaNodeJs } from 'react-icons/fa'
-import { SiNestjs } from 'react-icons/si'
+import { SiNestjs, SiNginx } from 'react-icons/si'
 
 interface IProject {
   image: JSX.Element,
@@ -32,6 +32,24 @@ const Project = () => {
 
   const dataProjects: IProject[] = [
     {
+      image: <SiNginx
+        size={50}
+        color="#008000"
+      />,
+      title: "Caesar's Book Ecommerce",
+      shortDescription: "Website thương mại điện tử sách",
+      detail: {
+        description: "(Self-learning) Xây dựng website có cả backend lẫn frontend và deploy sử dụng Docker + Nginx",
+        frontend: "React (TypeScript), Redux/Redux Toolkit, Ant Design",
+        backend: "NestJS, NodeJS, MongoDB",
+        member: 1,
+        role: "All",
+        demo: " http://14.225.254.16/?fbclid=IwAR06-h_c8iLFDRFtKntZ5igYcZE_XYbGZvJM6ke7KTMY-jJOAvLXfxI5Ijk",
+        github: " https://github.com/CaesarNgyn/Caesar-Book-Ecommerce"
+
+      }
+    },
+    {
       image: <SiNestjs
         size={50}
         color="#C30023"
@@ -40,12 +58,12 @@ const Project = () => {
       shortDescription: "Website tìm kiếm việc làm",
       detail: {
         description: "(Self-learning) Xây dựng website quản lý tìm kiếm việc làm",
-        frontend: "React (TypeScript), ",
+        frontend: "React (TypeScript)",
         backend: "NestJS, MongoDB",
         member: 1,
         role: "Developer",
         demo: "",
-        github: ""
+        github: " https://github.com/CaesarNgyn/Caesar-Job-Finding"
 
       }
     },
@@ -57,13 +75,13 @@ const Project = () => {
       title: "STeeK English",
       shortDescription: "Website  học Tiếng Anh trực tuyến",
       detail: {
-        description: "(Đồ án mini) Xây dựng website quản lý học Tiếng Anh",
+        description: "(Đồ án mini) Xây dựng website quản lý học Tiếng Anh trực tuyến",
         frontend: "React, Redux Toolkit, Boostrap 5",
         backend: "NodeJS (Express), MongoDB",
         member: 3,
         role: "Team Lead",
         demo: "",
-        github: ""
+        github: " https://github.com/CaesarNgyn/STeeK-English-Website"
 
       }
     },
@@ -75,13 +93,13 @@ const Project = () => {
       title: "React Portfolio",
       shortDescription: "Website sơ yếu lý lịch",
       detail: {
-        description: "(Self-learning) Xây dựng website responsive giới thiệu cá nhân",
+        description: "(Self-learning) Xây dựng website giới thiệu cá nhân",
         frontend: "React (TypeScript), Ant Design",
         backend: "Không sử dụng",
         member: 1,
         role: "Developer",
         demo: "",
-        github: ""
+        github: " https://github.com/CaesarNgyn/React-Portfolio"
 
       }
     },

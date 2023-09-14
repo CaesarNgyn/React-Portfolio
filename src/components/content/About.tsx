@@ -60,11 +60,11 @@ const About = () => {
                       <TypeAnimation
                         sequence={[
                           // Same substring at the start will only be typed out once, initially
-                          'College Student',
+                          'Security College Student',
                           1700, // wait 1s before replacing "Mice" with "Hamsters"
                           'Web Developer',
                           1700,
-                          'NestJS Developer',
+                          'Backend Engineer',
                           1700
 
                         ]}
@@ -76,9 +76,9 @@ const About = () => {
                     </h4>
                   </div>
                   <div className="definition">
-                    <p>Hi! Mình là <strong>Khánh</strong>, hoặc bạn có thể gọi mình là Caesar (Xê-Sa). </p>
+                    <p>Hi! Mình là <strong>Khánh</strong>, hoặc bạn có thể gọi mình là Caesar (Xê-Sa) Martin (Mác-Tin). </p>
                     <br />
-                    Tuy mình xuất thân là một kỹ sư An Toàn Thông Tin, nhưng mình lại có định hướng trở thành một kỹ sư Công Nghệ Phần Mềm ^^!
+                    Tuy mình xuất thân là một kỹ sư An Toàn Thông Tin, nhưng mình lại có định hướng trở thành một kỹ sư Công Nghệ Phần Mềm. Hoặc là cả 2 luôn ^^!
                     <br />
 
                   </div>

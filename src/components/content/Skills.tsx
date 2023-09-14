@@ -74,7 +74,7 @@ const Skills = () => {
                 <div className="arlo_tm_mini_title_holder">
                   <h4>Kỹ năng Backend</h4>
                 </div>
-                <li>Ngôn ngữ lập trình: Javascript, TypeScript</li>
+                <li>Ngôn ngữ lập trình: Javascript, TypeScript, Java, PHP</li>
                 <li>Restful APIs
                 </li>
                 <li>Framework: Express, NestJS
