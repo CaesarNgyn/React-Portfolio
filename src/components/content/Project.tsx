@@ -40,7 +40,7 @@ const Project = () => {
       shortDescription: "Website thương mại điện tử sách",
       detail: {
         description: "(Self-learning) Xây dựng website có cả backend lẫn frontend và deploy sử dụng Docker + Nginx",
-        frontend: "React (TypeScript), Redux/Redux Toolkit, Ant Design",
+        frontend: "React, Redux/Redux Toolkit, Ant Design",
         backend: "NestJS, NodeJS, MongoDB",
         member: 1,
         role: "All",
@@ -58,8 +58,8 @@ const Project = () => {
       shortDescription: "Website tìm kiếm việc làm",
       detail: {
         description: "(Self-learning) Xây dựng website quản lý tìm kiếm việc làm",
-        frontend: "React (TypeScript)",
-        backend: "NestJS, MongoDB",
+        frontend: "Không sử dụng",
+        backend: "NestJS, MongoDB, NodeJS",
         member: 1,
         role: "Developer",
         demo: "",

@@ -13,7 +13,7 @@ const Skills = () => {
                   <h4>Kỹ Năng Frontend </h4>
                 </div>
                 <li>Cắt/ghép template Website Responsive</li>
-                <li>Framework/Library: Bootstrap, React.JS</li>
+                <li>Framework/Library: Bootstrap, Ant Design, ReactJS</li>
                 <li>Tools: Redux, Redux Toolkit</li>
               </div>
               <div className="rightbox">
@@ -146,7 +146,7 @@ const Skills = () => {
                   <h4>Tiếng Anh</h4>
                 </div>
                 <li>Toeic 750/990 (2021)</li>
-                <li>Thành thạo 4 kĩ năng nghe, nói, đọc, viết</li>
+                <li>4 kỹ năng nghe, nói, đọc, viết</li>
               </div>
               <div className="rightbox">
                 <div className="progress_bar_wrap_total">
